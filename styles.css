@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  color: beige;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  font-family: cursive;
+}
+
+#nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 40%;
+  font-size: 15pt;
+  font-weight: lighter;
+}
+
+#logo-size {
+  font-size: 2rem;
+}
+.text-white {
+  color: white;
+}
+
+.text-blue {
+  color: aqua;
+}
+
+#hero {
+  background-image: url("./img/team-ino.JPG");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero-title {
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+#hero-subtext {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+#hero-button {
+  background-color: aqua;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: cursive;
+}
+#dot {
+  color: brown;
+}
+
+#ja {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: cursive;
+  color: aqua;
+}
+#agrifoods {
+  color: beige;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#works {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  row-gap: 70px;
+}
+
+#header {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 2.5rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 35px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
+  opacity: 0;
+}
+
+.gallery-overlay:hover {
+  opacity: 1;
+}
+
+#explain {
+  font-style: oblique;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+}
+
+.details {
+  font-size: 15px;
+  font-style: oblique;
+  color: whitesmoke;
+}
+
+#features {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 6rem 0;
+  padding: 0 8rem;
+  column-gap: 4rem;
+}
+
+.feature-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.feature-list li {
+  display: flex;
+  column-gap: 20px;
+}
+
+.feature-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: green;
+}
+
+.feature-explain {
+  font-style: oblique;
+}
