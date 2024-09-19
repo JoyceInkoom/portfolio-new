@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   border: none;
+  border: 0;
 }
 
 nav {
@@ -30,6 +31,21 @@ nav {
   font-weight: lighter;
 }
 
+#dot {
+  color: brown;
+}
+
+#ja {
+  font-style: italic;
+  font-weight: lighter;
+  font-family: cursive;
+  color: aqua;
+}
+#agrifoods {
+  color: beige;
+  font-family: "Courier New", Courier, monospace;
+}
+
 #logo-size {
   font-size: 2rem;
 }
@@ -38,7 +54,7 @@ nav {
 }
 
 .text-blue {
-  color: aqua;
+  color: burlywood;
 }
 
 #hero {
@@ -49,17 +65,6 @@ nav {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #hero-title {
@@ -76,44 +81,62 @@ nav {
 }
 
 #hero-button {
-  background-color: aqua;
+  background-color: burlywood;
   color: black;
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: bold;
   font-family: cursive;
 }
-#dot {
-  color: brown;
-}
 
-#ja {
-  font-style: italic;
-  font-weight: lighter;
-  font-family: cursive;
-  color: aqua;
-}
-#agrifoods {
-  color: beige;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#works {
-  margin: 5rem 0;
+.overlay {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
-  row-gap: 70px;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
 }
 
 #header {
-  width: 60%;
+  padding-left: 20rem;
+  /* margin-top: 3rem; */
+  margin-bottom: 2rem;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 65%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 15px;
   font-size: 2.5rem;
+  font-style: italic;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8rem;
+  margin-right: 10rem;
+  column-gap: 8rem;
+}
+
+.about-details {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  line-height: 0.9cm;
+  font-weight: 500;
+  text-align: justify;
+}
+
+#about {
+  background-color: burlywood;
+  margin-top: 0%;
 }
 
 .about-me {
@@ -123,95 +146,12 @@ nav {
   justify-content: space-evenly;
 }
 
-#gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  gap: 35px;
-}
-
-.gallery-item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-}
-
-.gallery-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: whitesmoke;
-  opacity: 0;
-}
-
-.gallery-overlay:hover {
-  opacity: 1;
-}
-
-#explain {
-  font-style: oblique;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.title {
-  font-size: 15px;
-  font-style: italic;
-  font-weight: bold;
-  color: green;
-}
-
-.details {
-  font-size: 15px;
-  font-style: oblique;
-  color: whitesmoke;
-}
-
-#features {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 6rem 0;
-  padding: 0 8rem;
-  column-gap: 4rem;
-}
-
-.feature-list {
+#about-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
-}
-
-.feature-item {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-}
-
-.feature-list li {
-  display: flex;
-  column-gap: 20px;
-}
-
-.feature-title {
-  font-size: 1.6rem;
+  text-align: left;
   font-weight: bold;
-  color: green;
+  margin-top: 1rem;
 }
 
-.feature-explain {
-  font-style: oblique;
-}
