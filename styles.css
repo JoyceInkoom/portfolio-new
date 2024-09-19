@@ -22,7 +22,7 @@ nav {
   font-family: cursive;
 }
 
-#nav-items {
+.nav-items {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -54,7 +54,7 @@ nav {
 }
 
 .text-blue {
-  color: burlywood;
+  color: palevioletred;
 }
 
 #hero {
@@ -81,7 +81,7 @@ nav {
 }
 
 #hero-button {
-  background-color: burlywood;
+  background-color: palevioletred;
   color: black;
   padding: 10px 20px;
   border-radius: 20px;
@@ -97,16 +97,16 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   margin-bottom: 0;
 }
 
-#header {
+.header {
   padding-left: 20rem;
   /* margin-top: 3rem; */
   margin-bottom: 2rem;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: initial;
   width: 65%;
   text-align: center;
   display: flex;
@@ -127,15 +127,17 @@ nav {
 }
 
 .about-details {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
   line-height: 0.9cm;
   font-weight: 500;
   text-align: justify;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 #about {
-  background-color: burlywood;
+  background-image: url(./img/bg1.jpg);
   margin-top: 0%;
 }
 
@@ -155,3 +157,66 @@ nav {
   margin-top: 1rem;
 }
 
+#portfolio {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 35px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: whitesmoke;
+  opacity: 0;
+}
+
+.gallery-overlay:hover {
+  opacity: 1;
+}
+
+.skillset {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8rem;
+  margin-right: 10rem;
+  column-gap: 8rem;
+  line-height: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.mini-head {
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+#skills {
+  background-image: url(./img/bg2.jpg);
+  margin-top: 0%;
+}
