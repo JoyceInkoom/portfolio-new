@@ -39,7 +39,7 @@ nav {
   font-style: italic;
   font-weight: lighter;
   font-family: cursive;
-  color: aqua;
+  color: palevioletred;
 }
 #agrifoods {
   color: beige;
@@ -103,9 +103,9 @@ nav {
 
 .header {
   padding-left: 20rem;
-  /* margin-top: 3rem; */
+  margin-top: 3rem;
   margin-bottom: 2rem;
-  color: black;
+  color: palevioletred;
   font-family: initial;
   width: 65%;
   text-align: center;
@@ -132,13 +132,8 @@ nav {
   line-height: 0.9cm;
   font-weight: 500;
   text-align: justify;
-  color: whitesmoke;
-  font-weight: bold;
-}
-
-#about {
-  background-image: url(./img/bg1.jpg);
-  margin-top: 0%;
+  color: black;
+  font-weight: 500;
 }
 
 .about-me {
@@ -157,12 +152,9 @@ nav {
   margin-top: 1rem;
 }
 
-#portfolio {
-  background-color: rgba(0, 0, 0, 0.5);
-}
 #gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   gap: 35px;
 }
@@ -176,7 +168,7 @@ nav {
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .gallery-overlay {
@@ -214,9 +206,4 @@ nav {
 .mini-head {
   font-size: 25px;
   text-decoration: underline;
-}
-
-#skills {
-  background-image: url(./img/bg2.jpg);
-  margin-top: 0%;
 }
