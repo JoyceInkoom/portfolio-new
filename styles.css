@@ -126,9 +126,10 @@ nav {
   column-gap: 8rem;
 }
 
-#img {
-  border: 5px solid;
+.img {
+  border: 3px solid;
   color: palevioletred;
+  border-radius: 50%;
 }
 
 .about-details {
