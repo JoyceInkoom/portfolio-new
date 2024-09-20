@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -16,8 +20,8 @@
       <div class="nav-items">
         <a class="text-blue" href="#">Home</a>
         <a class="text-blue" href="#">About</a>
+        <a class="text-blue" href="#">Skills</a>
         <a class="text-blue" href="#">Portfolio</a>
-        <a class="text-blue" href="#">Blog</a>
         <a class="text-blue" href="#">Pages</a>
         <a class="text-blue" href="#">Contact</a>
       </div>
@@ -27,9 +31,9 @@
       <div class="overlay">
         <h1 id="hero-title">
           <span class="text-blue">Hello There!</span>
-          <span class="text-white">Nice To Meet You</span>
+          <span class="text-white">I'm Joyce Apagyiwa Inkoom</span>
         </h1>
-        <p id="hero-subtext">I'm Joyce Apagyiwa Inkoom, Your Coder's Code</p>
+        <p id="hero-subtext">I'm a Junior Web Developer</p>
         <button id="hero-button">Hire Me</button>
       </div>
     </section>
@@ -39,7 +43,13 @@
       <h1 class="header">About Me</h1>
       <div class="about-me">
         <div>
-          <img src="./img/herobg.JPG" alt="About Me" width="300" height="350" />
+          <img
+            id="img"
+            src="./img/herobg.JPG"
+            alt="About Me"
+            width="300"
+            height="350"
+          />
         </div>
         <div class="about-details">
           <p>
@@ -58,7 +68,7 @@
     <!-- about section ends here -->
     <!-- skills section starts here -->
     <section id="skills">
-      <h1 class="header">MY SKILLS</h1>
+      <h1 class="header">My Skills</h1>
       <div class="skillset">
         <div>
           <h4 class="mini-head">STRENGTHS</h4>
@@ -93,17 +103,10 @@
     <!-- portfolio section starts here -->
     <section id="portfolio">
       <h1 class="header">My Portfolio</h1>
-      <div class="nav-items">
-        <a href="#">All</a>
-        <a href="#">Team</a>
-        <a href="#">HBC</a>
-        <a href="#">Mentor</a>
-        <a href="#">Photography</a>
-      </div>
       <!-- gallery 1 -->
       <div id="gallery">
         <div class="gallery-item">
-          <img src="./img/meone.JPG" alt="Myself" width="250" height="500" />
+          <img src="./img/meone.JPG" alt="Myself" width="250" height="300" />
           <div class="gallery-overlay">
             <span class="title">MYSELF</span>
             <span class="details">Smart and Intelligent</span>
@@ -115,7 +118,7 @@
             src="./img/metwo.JPG"
             alt="Presentation"
             width="250"
-            height="500"
+            height="300"
           />
           <div class="gallery-overlay">
             <span class="title">PRESENTATION</span>
@@ -124,39 +127,41 @@
         </div>
         <!-- gallery 3 -->
         <div class="gallery-item">
-          <img src="./img/shoot.jpg" alt="Shoot" width="250" height="500" />
+          <img src="./img/shoot.jpg" alt="Shoot" width="250" height="300" />
           <div class="gallery-overlay">
             <span class="title">PHOTOGRAPHY</span>
             <span class="details">Photographer and videographer</span>
           </div>
         </div>
-        <!-- gallery 4 -->
-        <div class="gallery-item">
-          <img src="./img/team 2.JPG" alt="Team" />
-          <div class="gallery-overlay">
-            <span class="title">TEAM</span>
-            <span class="details">Team Innovation</span>
-          </div>
-        </div>
-        <!-- gallery 6 -->
-        <div class="gallery-item">
-          <img src="./img/talk.jpg" alt="At Holland GreenTech" />
-          <div class="gallery-overlay">
-            <span class="title">AT HOLLAND GREENTECH</span>
-            <span class="details">Conference</span>
-          </div>
-        </div>
-        <!-- gallery 7 -->
-        <div class="gallery-item">
-          <img src="./img/team-ggg.JPG" alt="Brainstorming" />
-          <div class="gallery-overlay">
-            <span class="title">TEAM GGG</span>
-            <span class="details">Green Gold Gardens</span>
-          </div>
-        </div>
       </div>
     </section>
     <!-- portfolio section ends here -->
-    <footer>my footer goes here</footer>
+    <!-- new section starts here -->
+    <section id="connect">
+      <h1>Let's Connect</h1>
+    </section>
+    <!-- footer starts here -->
+    <footer>
+      <div id="drive">
+        <h2>What Drives Joyce</h2>
+        <p>I am driven by my passion for change</p>
+        <p>Life is not well lived if it does not impact anybody.</p>
+        <p>Nobody lives for him/herself</p>
+      </div>
+      <div>
+        <h2>Follow Me</h2>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+      <div>
+        <h2>Features</h2>
+        <a href="#">About Me</a>
+        <a href="#">Skills</a>
+        <a href="#">Portfolio Me</a>
+        <a href="#">Contact Me</a>
+      </div>
+    </footer>
   </body>
 </html>
